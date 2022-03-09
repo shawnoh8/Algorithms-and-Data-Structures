@@ -5,7 +5,7 @@
 
 const unsortedArray = [1, 10, 5, 8, 7, 6, 4, 3, 2, 9];
 
-for (let i = 0; i < unsortedArray.length; i++) {
+for (let i = 0; i < unsortedArray.length-1; i++) {
 	let min = unsortedArray[i];
 	let minIndex = i;
 	

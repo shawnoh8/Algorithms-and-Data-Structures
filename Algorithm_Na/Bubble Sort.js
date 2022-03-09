@@ -5,8 +5,8 @@
 
 const unsortedArray = [1, 10, 5, 8, 7, 6, 4, 3, 2, 9];
 
-for (let i=0; i<unsortedArray.length; i++) {
-    for (let j=0; j<unsortedArray.length-1; j++) {
+for (let i=0; i<unsortedArray.length-1; i++) {
+    for (let j=0; j<unsortedArray.length-i; j++) {
         if (unsortedArray[j] > unsortedArray[j+1]) {
             let temp = unsortedArray[j];
             unsortedArray[j] = unsortedArray[j+1];
