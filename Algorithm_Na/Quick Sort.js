@@ -8,7 +8,7 @@ const unsortedArray = [1, 10, 5, 8, 7, 6, 4, 3, 2, 9];
 let initialIndex, finalIndex, i, j;
 
 function quickSort(initialIndex, finalIndex, unsortedArray) {
-    if(initialIndex >= finalIndex) {
+    if(initialIndex >= finalIndex) { // using >= because when j = 0, j - 1 can become negative. resulting initial > final
         return unsortedArray;
     }
 
@@ -52,4 +52,5 @@ showSortedArray(unsortedArray);
 
 // Stackoverflow helped : https://stackoverflow.com/questions/71426308/trying-to-write-quick-sort-algorithm-without-making-2-new-lists-and-appending-c
 // Learned : at line 21, if you compare the value of array first instead of verifying index is not out of bounds
-// you could get an error. Therefore, needs to compare index first. 
+// you could get an error. Therefore, needs to compare index first.
+// This quick sort method is a Hoare's original partitioning scheme.
